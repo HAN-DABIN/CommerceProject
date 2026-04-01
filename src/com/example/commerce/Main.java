@@ -27,7 +27,6 @@ public class Main {
         // 상품 리스트 반복문
         for (int i = 0; i < products.size(); i++) { // i가 products 리스트의 크기보다 작을 동안 반복
             Product p = products.get(i); // 리스트에서 i번째 상품을 가져와서 p에 저장
-//            System.out.println((i + 1) + ". " + p.getName() + " | " + p.getPrice() + "원 | " + p.getIntroduction());
             System.out.printf((i + 1) + ". " + "%-11s | %,9d | %13s\n", p.getName(), p.getPrice(), p.getIntroduction()); //%d 숫자 프린트포맷함수
         }
         System.out.println("0. 종료         | 프로그램 종료");
